@@ -31,7 +31,7 @@ Here's a walkthrough of implemented user stories:
 
 <img src='TipCalculator.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with [GiphY]
+GIF created with [GiphY capture] https://giphy.com/apps/giphycapture
 
 ## Notes
 
