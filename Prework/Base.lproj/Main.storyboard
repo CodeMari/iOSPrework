@@ -36,7 +36,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="jOI-HV-jd1"/>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="Ej2-re-geL"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReK-eW-Vdk">
@@ -68,6 +68,9 @@
                                     <segment title="18%"/>
                                     <segment title="20%"/>
                                 </segments>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="PBp-P4-eZd"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -78,22 +81,15 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="TipControl" destination="ReK-eW-Vdk" id="cg0-8u-pnp"/>
                         <outlet property="billAmountTextField" destination="wTG-k8-yXb" id="TqO-LN-sRU"/>
-                        <outlet property="tipControl" destination="ReK-eW-Vdk" id="PEm-fT-gB9"/>
-                        <outlet property="tipPercentageLabel" destination="Qja-Uj-Yn1" id="Ql0-df-2kf"/>
-                        <outlet property="totalLAbel" destination="6Pc-lP-3s7" id="kd4-E8-jzu"/>
-                        <outlet property="totalLabel" destination="ReK-eW-Vdk" id="7qn-qn-DSS"/>
+                        <outlet property="tipAmountSegmentedControl" destination="RAu-85-gPu" id="RaR-ng-AAG"/>
+                        <outlet property="tipControl" destination="RAu-85-gPu" id="6kf-Zf-wbS"/>
+                        <outlet property="tipLabel" destination="ReK-eW-Vdk" id="g1A-xQ-ox2"/>
+                        <outlet property="tipPercentageLabel" destination="ReK-eW-Vdk" id="DI4-77-Uhc"/>
+                        <outlet property="totalLabel" destination="6Pc-lP-3s7" id="Dvn-cH-IQ3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GdR-X7-5f2">
-                    <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <tapGestureRecognizer id="XTm-Mx-pc9">
                     <connections>
                         <action selector="onTap:" destination="BYZ-38-t0r" id="Ftt-cP-DBx"/>
